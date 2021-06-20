@@ -1,0 +1,16 @@
+C:\Users\33366\source\repos\DBCreator\DBCreator\bin\Debug\DBCreator.exe.config
+C:\Users\33366\source\repos\DBCreator\DBCreator\bin\Debug\DBCreator.exe
+C:\Users\33366\source\repos\DBCreator\DBCreator\bin\Debug\DBCreator.pdb
+C:\Users\33366\source\repos\DBCreator\DBCreator\bin\Debug\SharpYaml.dll
+C:\Users\33366\source\repos\DBCreator\DBCreator\bin\Debug\SharpYaml.pdb
+C:\Users\33366\source\repos\DBCreator\DBCreator\bin\Debug\SharpYaml.xml
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.csproj.AssemblyReference.cache
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.Form1.resources
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.Form2.resources
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.Properties.Resources.resources
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.csproj.GenerateResource.cache
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.csproj.CoreCompileInputs.cache
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.csproj.CopyComplete
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.exe
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.pdb
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Debug\DBCreator.AboutBox1.resources
