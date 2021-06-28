@@ -74,13 +74,6 @@ namespace DBCreator
             textBox4.Text = colorDialog1.Color.ToString();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.Title = "Photo of target";
-            openFileDialog1.ShowDialog();
-            pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             string BirthPlace = textBox2.Text;
@@ -175,13 +168,6 @@ namespace DBCreator
             textBox4.Text = colorDialog1.Color.ToString();
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            openFileDialog1.Title = "Photo of target";
-            openFileDialog1.ShowDialog();
-            pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
-        }
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             string BirthPlace = textBox2.Text;
@@ -252,6 +238,7 @@ namespace DBCreator
                 file.Write(BirthPlace + Environment.NewLine + FulleName.ToString() + Environment.NewLine + Ethnicity.ToString() + Environment.NewLine + HairColor.ToString() + Environment.NewLine + EyeColor.ToString() + Environment.NewLine + Height.ToString() + Environment.NewLine + BodyType.ToString() + Environment.NewLine + Weight.ToString());
                 file.Close();
             }
+
         }
 
         private void timer1_Tick_1(object sender, EventArgs e)
