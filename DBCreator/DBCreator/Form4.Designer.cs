@@ -1,7 +1,7 @@
 ﻿
 namespace DBCreator
 {
-    partial class Form1
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,16 @@ namespace DBCreator
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.peopleDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transcriptDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.peopleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -62,17 +58,18 @@ namespace DBCreator
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.transcriptDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem1,
             this.fileToolStripMenuItem,
             this.peopleToolStripMenuItem,
             this.aboutToolStripMenuItem});
@@ -81,21 +78,6 @@ namespace DBCreator
             this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem1
-            // 
-            this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripMenuItem});
-            this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(46, 24);
-            this.fileToolStripMenuItem1.Text = "File";
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.openToolStripMenuItem.Text = "Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -111,7 +93,7 @@ namespace DBCreator
             // peopleDBToolStripMenuItem
             // 
             this.peopleDBToolStripMenuItem.Name = "peopleDBToolStripMenuItem";
-            this.peopleDBToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.peopleDBToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.peopleDBToolStripMenuItem.Text = "People DB";
             this.peopleDBToolStripMenuItem.ToolTipText = "People DB";
             this.peopleDBToolStripMenuItem.Click += new System.EventHandler(this.peopleDBToolStripMenuItem_Click);
@@ -119,10 +101,17 @@ namespace DBCreator
             // databaseToolStripMenuItem
             // 
             this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
-            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.databaseToolStripMenuItem.Text = "Traffic DB";
             this.databaseToolStripMenuItem.ToolTipText = "Traffic DB";
             this.databaseToolStripMenuItem.Click += new System.EventHandler(this.databaseToolStripMenuItem_Click);
+            // 
+            // transcriptDBToolStripMenuItem
+            // 
+            this.transcriptDBToolStripMenuItem.Name = "transcriptDBToolStripMenuItem";
+            this.transcriptDBToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.transcriptDBToolStripMenuItem.Text = "Transcript DB";
+            this.transcriptDBToolStripMenuItem.Click += new System.EventHandler(this.transcriptDBToolStripMenuItem_Click);
             // 
             // peopleToolStripMenuItem
             // 
@@ -142,10 +131,12 @@ namespace DBCreator
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.richTextBox1);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label15);
@@ -168,51 +159,22 @@ namespace DBCreator
             this.panel1.Size = new System.Drawing.Size(1033, 504);
             this.panel1.TabIndex = 3;
             // 
-            // button2
+            // label1
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(528, 434);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(498, 28);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 257);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Transcript";
             // 
-            // label18
+            // richTextBox1
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(525, 5);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(273, 17);
-            this.label18.TabIndex = 19;
-            this.label18.Text = "POI (Person Of Interest) Photograph";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(529, 25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(497, 401);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(5, 470);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1021, 28);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.richTextBox1.Location = new System.Drawing.Point(3, 277);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(1025, 183);
+            this.richTextBox1.TabIndex = 16;
+            this.richTextBox1.Text = "";
             // 
             // label17
             // 
@@ -403,19 +365,46 @@ namespace DBCreator
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // timer2
+            // button1
             // 
-            this.timer2.Enabled = true;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.button1.Location = new System.Drawing.Point(3, 466);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(1025, 33);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Save Transcript";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // transcriptDBToolStripMenuItem
+            // button2
             // 
-            this.transcriptDBToolStripMenuItem.Name = "transcriptDBToolStripMenuItem";
-            this.transcriptDBToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.transcriptDBToolStripMenuItem.Text = "Transcript DB";
-            this.transcriptDBToolStripMenuItem.Click += new System.EventHandler(this.transcriptDBToolStripMenuItem_Click);
+            this.button2.Location = new System.Drawing.Point(3, 226);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(1025, 29);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "PLAY";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 191);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(1025, 29);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "SELECT RECORDING";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBox1.Location = new System.Drawing.Point(3, 163);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(1025, 22);
+            this.textBox1.TabIndex = 22;
+            // 
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -424,7 +413,7 @@ namespace DBCreator
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Form4";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DBCreator - PeopleDB";
@@ -432,7 +421,6 @@ namespace DBCreator
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,9 +435,6 @@ namespace DBCreator
         private System.Windows.Forms.ToolStripMenuItem peopleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -467,11 +452,14 @@ namespace DBCreator
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.ToolStripMenuItem transcriptDBToolStripMenuItem;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button3;
     }
 }
 

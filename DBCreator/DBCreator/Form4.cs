@@ -4,10 +4,11 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
+using System.Media;
 
 namespace DBCreator
 {
-    public partial class Form1 : Form
+    public partial class Form4 : Form
     {
         bool oneExists = false;
         bool twoExists = false;
@@ -20,7 +21,7 @@ namespace DBCreator
         bool nineExists = false;
         bool tenExists = false;
 
-        public Form1()
+        public Form4()
         {
             InitializeComponent();
             FormClosed += Form1_FormClosed;
@@ -164,9 +165,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button1.Enabled = true;
         }
 
         private void two_click(object sender, EventArgs e)
@@ -202,9 +200,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button2.Enabled = true;
         }
 
         private void three_click(object sender, EventArgs e)
@@ -240,9 +235,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button1.Enabled = true;
         }
 
         private void four_click(object sender, EventArgs e)
@@ -278,9 +270,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button1.Enabled = true;
         }
 
         private void five_click(object sender, EventArgs e)
@@ -316,9 +305,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button1.Enabled = true;
         }
 
         private void six_click(object sender, EventArgs e)
@@ -354,9 +340,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button1.Enabled = true;
         }
 
         private void seven_click(object sender, EventArgs e)
@@ -392,9 +375,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button1.Enabled = true;
         }
 
         private void eight_click(object sender, EventArgs e)
@@ -430,9 +410,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button1.Enabled = true;
         }
 
         private void nine_click(object sender, EventArgs e)
@@ -468,9 +445,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button1.Enabled = true;
         }
 
         private void ten_click(object sender, EventArgs e)
@@ -506,9 +480,6 @@ namespace DBCreator
             label17.Text = ListLines[8];
             label16.Visible = true;
             label17.Visible = true;
-            button1.Text = "Create a '" + label3.Text + "' folder.";
-            button2.Text = "Save to '" + label3.Text + "' folder.";
-            button1.Enabled = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -634,39 +605,6 @@ namespace DBCreator
                 tenExists = true;
             }
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Title = "Picture of POI (Person Of Interest)";
-            openFileDialog.ShowDialog();
-            pictureBox1.Image = new Bitmap(openFileDialog.FileName);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (Directory.Exists(Directory.GetCurrentDirectory() + "\\" + label3.Text))
-            {
-                if (File.Exists(Directory.GetCurrentDirectory() + "\\" + label3.Text + "\\" + pictureBox1.ImageLocation) != true)
-                {
-                    Bitmap bitmap = new Bitmap(pictureBox1.Image);
-                    bitmap.Save(Directory.GetCurrentDirectory() + "\\" + label3.Text + "\\" + "POI.png", ImageFormat.Png);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please create a person and add that person to a directory first.", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            if (label3.Text != string.Empty)
-            {
-                button2.Enabled = true;
-            }
-        }
-
         private void databaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3();
@@ -718,6 +656,30 @@ namespace DBCreator
             this.Hide();
             Form4 form4 = new Form4();
             form4.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.Title = "Save Transcript.";
+            save.Filter = "Text File (*.txt) |*.txt";
+            save.ShowDialog();
+            richTextBox1.SaveFile(save.FileName, RichTextBoxStreamType.PlainText);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog audio = new OpenFileDialog();
+            audio.Title = "Please open a recording.";
+            audio.Filter = "Wav File (*.wav) |*.wav";
+            audio.ShowDialog();
+            textBox1.Text = audio.FileName;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SoundPlayer soundPlayer = new SoundPlayer(textBox1.Text);
+            soundPlayer.Play();
         }
     }
 }

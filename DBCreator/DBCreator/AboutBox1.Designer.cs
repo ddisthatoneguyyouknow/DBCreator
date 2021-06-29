@@ -88,7 +88,7 @@ namespace DBCreator
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(485, 21);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "3.1.0.2";
+            this.labelVersion.Text = "4.0.0.0";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelProductName
