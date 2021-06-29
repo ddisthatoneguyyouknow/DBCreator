@@ -9,4 +9,4 @@ You can use my software for your independent investigations. Usually investigati
 - Registration Plates Database Support
 - Last Known Location (Lattitude & Longitude or Street Address) Support
 
-## [Download - 4.0.0.0](https://github.com/ddisthatoneguyyouknow/DBCreator/releases/download/3.0.0.0/DBCreator.zip)
+## [Download - 3.1.0.2](https://github.com/ddisthatoneguyyouknow/DBCreator/releases/tag/3.1.0.2)
