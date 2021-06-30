@@ -663,6 +663,7 @@ namespace DBCreator
             SaveFileDialog save = new SaveFileDialog();
             save.Title = "Save Transcript.";
             save.Filter = "Text File (*.txt) |*.txt";
+            save.InitialDirectory = Directory.GetCurrentDirectory();
             save.ShowDialog();
             richTextBox1.SaveFile(save.FileName, RichTextBoxStreamType.PlainText);
         }
