@@ -8,5 +8,6 @@ You can use my software for your independent investigations. Usually investigati
 - People Traffic Database Creator
 - Registration Plates Database Support
 - Last Known Location (Lattitude & Longitude or Street Address) Support
+- Transcript Database Creator assist system support
 
 ## [Download - 4.1.0.1](https://github.com/ddisthatoneguyyouknow/DBCreator/releases/download/4.1.0.1/DBCreator.zip)
