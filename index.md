@@ -1,6 +1,6 @@
 ## Developed for Independent Investigators
 
-You can use my software for your independent investigations. Usually investigation software costs are not cheap. I made my software free.
+You can use my software for your independent investigations. Usually, investigation software costs are not cheap. I made my software free.
 
 ### Features
 - People Database Creator
