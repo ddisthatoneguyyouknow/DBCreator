@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DBCreator.exe" version="2.1.0.1" publicKeyToken="228ef4b5b75f84c6" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:publisher="ddisthatoneguyyouknow" co.v1:suiteName="Independent Investigation Software Suite" asmv2:product="DBCreator" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DBCreator" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DBCreator.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DBCreator.exe" size="67536">
+      <assemblyIdentity name="DBCreator" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1OjQKNC+E8G6TKNmXXULoqkmWZU5HxwGwFeXF10pr7s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DBCreator.exe.config" size="1980">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZK/gJodpkuTIw5I3c8kov5/aiPhM47qfcJKx/d7PahQ=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-3O2BRVL\dd" issuerKeyHash="d32084c12ba2efdb7a89c4d43641f4702aaa8330" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Ao1+v6ny3wlworneK6M+p2khfXytklpV5hyu+ScNXtc=</DigestValue></Reference></SignedInfo><SignatureValue>hpwNkRHfeTrormJCDWLEiP9p5t7U24TBWclj4y4+ZJ3h8ns8IaFU2at4Mi+0O9Gksum9zFOI9SdVQEctvcGPlsWnOcyLxhyHSMarwGWYyBuNkSB+pJV7W5eTz+n9I2ND0Efunsq4CTSaEJ9e21xDJxWAKlq6YT+s+8Z00ie9Pxk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0j7M85qjtsdgWwziuuzEQHPVucm9omjyIROiTaCL1BRzUZn9q3kPrd6ibcBf5W4i6unUkJhG1yeLgHkXXaifBq/aucuAffemPKD4eYK4+z6EkJkGGri4G1sqw7uuAYYQw/IqTNJ25MFeRdqjs7ebtXehIo69fz2QBASVWpN/WqU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d75e0d27f9ae1ce6555a92ad7c7d2169a73ea32bdeb9a27009dff2a9bf7e8d02" Description="" Url=""><as:assemblyIdentity name="DBCreator.exe" version="2.1.0.1" publicKeyToken="228ef4b5b75f84c6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-3O2BRVL\dd</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/AH4uM82q8AhLdcLZ4N1fnwVQ1XIhmaefI1tLQ0BInc=</DigestValue></Reference></SignedInfo><SignatureValue>Ua61nO1nHhaC7SSKHbKveDWJ5wmvAs+8I+Z75Aw1+4Q0H1QL7J75uLf3NSuIwtOrE3mBk1Wd1zXv/2KS0e+JX23XOxrREwMMGeoQSpskQXTXp2JrBxcUj1BUd9jLrHvQdTJEsHWzQatNb9UdIkaVwQPcHXauvb64ajLPTCvrFTs=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0j7M85qjtsdgWwziuuzEQHPVucm9omjyIROiTaCL1BRzUZn9q3kPrd6ibcBf5W4i6unUkJhG1yeLgHkXXaifBq/aucuAffemPKD4eYK4+z6EkJkGGri4G1sqw7uuAYYQw/IqTNJ25MFeRdqjs7ebtXehIo69fz2QBASVWpN/WqU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQJ7VTVG8GrYdCBd5T/zs0HzANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQARABFAFMASwBUAE8AUAAtADMATwAyAEIAUgBWAEwAXABkAGQwHhcNMjEwNjIwMDAyNDQxWhcNMjIwNjIwMDYyNDQxWjAvMS0wKwYDVQQDHiQARABFAFMASwBUAE8AUAAtADMATwAyAEIAUgBWAEwAXABkAGQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANI+zPOao7bHYFsM4rrsxEBz1bnJvaJo8iETok2gi9QUc1GZ/at5D63eom3AX+VuIurp1JCYRtcni4B5F12onwav2rnLgH33pjyg+HmCuPs+hJCZBhq4uBtbKsO7rgGGEMPyKkzSduTBXkXao7O3m7V3oSKOvX89kAQElVqTf1qlAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAS30LqL1Q7zZUytm76WEBeygkuffATDX9iVXhXr6x9BBgAdp3nd/oiidgATu4AIY0yk1gEBtXJ1QjdDPFkSJgsBH+eZSf8gJ9jZcJmwJYcaJYvFb/3XyuJ0V6FwLdaGhAe5gZwZJd38Xs74qguWa/N7ZUro+I5uDO2W3DINYTbzQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
