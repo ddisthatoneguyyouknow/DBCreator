@@ -28,8 +28,8 @@
     <SuiteName>Independent Investigation Software Suite</SuiteName>
     <AutorunEnabled>true</AutorunEnabled>
     <DisallowUrlActivation>true</DisallowUrlActivation>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>4.1.1.2</ApplicationVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>4.1.0.1</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>

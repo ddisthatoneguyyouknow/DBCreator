@@ -80,7 +80,6 @@ namespace DBCreator
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.transcriptDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -114,7 +113,7 @@ namespace DBCreator
             this.peopleDataToolStripMenuItem,
             this.trafficDataToolStripMenuItem});
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // peopleDataToolStripMenuItem
@@ -135,8 +134,7 @@ namespace DBCreator
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.peopleDBToolStripMenuItem,
-            this.databaseToolStripMenuItem,
-            this.transcriptDBToolStripMenuItem});
+            this.databaseToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.fileToolStripMenuItem.Text = "New";
@@ -145,7 +143,7 @@ namespace DBCreator
             // peopleDBToolStripMenuItem
             // 
             this.peopleDBToolStripMenuItem.Name = "peopleDBToolStripMenuItem";
-            this.peopleDBToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.peopleDBToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.peopleDBToolStripMenuItem.Text = "People DB";
             this.peopleDBToolStripMenuItem.ToolTipText = "People DB";
             this.peopleDBToolStripMenuItem.Click += new System.EventHandler(this.peopleDBToolStripMenuItem_Click);
@@ -153,7 +151,7 @@ namespace DBCreator
             // databaseToolStripMenuItem
             // 
             this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
-            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.databaseToolStripMenuItem.Text = "Traffic DB";
             this.databaseToolStripMenuItem.ToolTipText = "Traffic DB";
             // 
@@ -630,13 +628,6 @@ namespace DBCreator
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // transcriptDBToolStripMenuItem
-            // 
-            this.transcriptDBToolStripMenuItem.Name = "transcriptDBToolStripMenuItem";
-            this.transcriptDBToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.transcriptDBToolStripMenuItem.Text = "Transcript DB";
-            this.transcriptDBToolStripMenuItem.Click += new System.EventHandler(this.transcriptDBToolStripMenuItem_Click);
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -712,7 +703,6 @@ namespace DBCreator
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem peopleDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trafficDataToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem transcriptDBToolStripMenuItem;
     }
 }
 
