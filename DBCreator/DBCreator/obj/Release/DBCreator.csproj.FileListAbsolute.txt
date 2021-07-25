@@ -11,3 +11,4 @@ C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Release\DBCreator.pdb
 C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Release\DBCreator.Form3.resources
 C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Release\DBCreator.Properties.Resources.resources
 C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Release\DBCreator.Form4.resources
+C:\Users\33366\source\repos\DBCreator\DBCreator\obj\Release\DBCreator.csproj.AssemblyReference.cache

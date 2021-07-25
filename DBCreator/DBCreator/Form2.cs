@@ -10,6 +10,7 @@ namespace DBCreator
         public Form2()
         {
             InitializeComponent();
+            FormClosed += Form2_FormClosed;
             comboBox1.Items.Add("African american");
             comboBox1.Items.Add("Caucasian/White person");
             comboBox1.Items.Add("Americans");
@@ -61,6 +62,11 @@ namespace DBCreator
             comboBox1.Items.Add("Mestizo");
             comboBox1.Items.Add("People of the dominican republic");
             comboBox1.Items.Add("Kazakhs");
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

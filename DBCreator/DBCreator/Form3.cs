@@ -829,5 +829,12 @@ namespace DBCreator
             label16.Visible = true;
             label17.Visible = true;
         }
+
+        private void transcriptDBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form4 form4 = new Form4();
+            form4.Show();
+        }
     }
 }
